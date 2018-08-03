@@ -1,0 +1,241 @@
+@import 'bootstrap.less';
+/* ==================================== carousel =========================================== */
+
+
+
+/* ==================================== NAVIGATION ========================================== */
+#headerSection{
+    background: url(../images/headerbg.png) repeat 0 0;
+    position: relative;
+}
+#headerSection .container{
+    padding: 0px;
+}
+#navigation{
+    /* margin-top: 30px; */
+    background: none;  
+}
+#navigation h1{
+    margin: 0px;
+}
+#navigation a.navbar-brand{
+    font-weight: bold;
+    line-height: 1.3em;
+    font-size: 28px;
+}
+a.logo-dev img{
+    width: 350px;
+    margin-left: 0px;
+}
+#navigation ul.nav > li >a{
+    padding: 15px 25px;
+}
+@media all and (max-width: 1000px){
+    #navigation button.navbar-toggle{
+        position: absolute;
+        top: -50px;
+        right: 0px;
+    }
+    #navigation ul.nav > li >a{
+        padding: 6px 8px;
+        background-color: #d33800;
+    }
+    #navigation ul.nav > li{
+        /* margin-bottom: 2px; */
+    }
+    #navigation ul.nav{
+        background: url(../images/headerbg.png)
+    }
+    #navigation ul.nav li ul.dropdown-menu{
+        margin-left: 20px;
+        font-weight: bold;
+
+    }
+    #navigation ul.nav li ul.dropdown-menu li a{
+        padding: 2px 4px;
+        font-weight: bold;
+    }
+    #navigation ul.nav li ul.dropdown-menu li a:hover{
+        background: url(../images/tabrepeat.png) repeat-x #d33800;
+        color: #fff;
+        margin: 0px 40px;
+        border-radius: 5px;
+    }
+}
+@media all and (max-width: 500px){
+    a.logo-dev img{
+        width: 200px;
+        margin-top: 40px;
+        margin-bottom: 0px;
+    }
+    #my-carousel .carousel-caption{
+        background-color: transparent !important;
+    }
+}
+#navigation ul.nav > li > a{
+    background: url(../images/tabRepeatInactive.png) repeat-x  #f9f9f9;
+    margin-right: 2px;
+    border-radius: 4px 4px 0px 0px;
+    text-shadow: 0 0 0 black;
+}
+#navigation ul.nav > li.active >a{
+    background: url(../images/tabrepeat.png) repeat-x #d33800;
+
+}
+#navigation ul.nav > li >a:focus{
+    color: inherit;
+}
+
+#navigation ul.nav li ul.dropdown-menu{
+    border-radius: 4px;
+}
+#navigation button.navbar-toggle{
+    margin-top: 0px;
+    background-color: #fe5214;
+}
+.navbar{
+    border-width: 0px;
+}
+
+/* ==================================== carousel =========================================== */
+#slideSection{
+    border-top: #d33800 solid 4px;
+    border-bottom: 4px solid #717171;
+    /* margin-top: -2px; */
+}
+#slideSection #my-carousel .carousel-inner .item img{
+    max-height: 300px;
+    margin: 0px auto;
+}
+#slideSection #my-carousel .carousel-inner{
+    background-color: #000;
+}
+#my-carousel .carousel-caption{
+    max-width: 40%;
+    text-align: left;
+    background-color: #7d1603;
+    padding: 10px;
+    border-radius: 14px;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+}
+#my-carousel .carousel-caption h2{
+    position: absolute;
+    top: 2%;
+    left: 2%;
+}
+#my-carousel .carousel-caption p{
+    position: absolute;
+    top: 35%;
+    left: 2%;
+}
+#my-carousel .carousel-caption a.btn{
+    position: absolute;
+    bottom: 10%;
+    left: 2%;
+}
+/* ==================================== fieldSection =========================================== */
+#fieldSection{
+    background: url('../images/bodyBg.png') repeat left top;
+    background: url(../images/shadow.png) no-repeat center bottom;
+    padding: 28px 0px;
+}
+#fieldSection div.title{
+    text-align: center;
+    margin: 30px auto;
+}
+#fieldSection .title{
+    text-align: center;
+    margin-top: 30px;
+}
+#fieldSection .title h2{
+    font-weight: bold;
+}
+#fieldSection .col-md-2:hover{
+    background: url(../images/smallShadows.png) no-repeat center 135px;
+    cursor: pointer;
+}
+#fieldSection .col-md-2 .well{
+    padding: 0px;
+    text-align: center;
+    height: 135px;
+}
+#fieldSection .col-md-2 .well h4{
+    line-height: 44px;
+    height: 80px;
+    background: url(../images/blockRepeat.png) no-repeat center 135px #fff;
+}
+#fieldSection .col-md-2 .well h4 i{
+    font-size: 2em;
+    display: block;
+    color: #fe5214;
+}
+#fieldSection .col-md-2 .well span{
+    font-weight: bold;
+}
+.popover-title{
+    color: #fe5214;
+    padding: 30px 0px;
+    text-align: center;
+}
+#workSection{
+    background: url(../images/shadowsReverse.png) center top no-repeat;
+}
+#workSection .row h3{
+    color: #fe5214;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+#workSection .thumbnail:hover{
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.5)
+}
+#workSection .thumbnail h4{
+    margin: -4px -4px 4px 0px;
+    line-height: 44px;
+    background: url(../images/blockRepeat.png) repeat-x 0 0;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+}
+.thumbnail .caption {
+    text-align: center;
+}
+#bannerSection{
+    padding: 48px 0px;
+    text-align: center;
+}
+#bannerSection a{
+    margin: 8px;
+}
+#bannerSection a img{
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+    padding: 2px;
+    border: 1px solid #ddd;
+}
+#footerSection{
+    background: url(../images/footerbg.png) repeat 0 0;
+    color: #fff;
+    padding: 28px 0px;
+    border-top: 1px solid #fe5214;
+}
+
+#footerSection .newsletter h4,#footerSection .latest-news h4,#footerSection .contact h4,#footerSection .contact h5,#footerSection .newsletter h5
+	{
+	font-weight: 700;
+	margin: 30px 0 10px
+}
+
+#footerSection .latest-news ul.media-list li.media .media-body h5 {
+	font-weight: 700
+}
+
+#footerSection .latest-news ul.media-list li.media .media-body p {
+	font-size: 14px
+}
+
+
+
